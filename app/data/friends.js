@@ -38,7 +38,9 @@ const newFriend = req => {
     scores: [
       Number(req.question1),
       Number(req.question2),
-      Number(req.question3)
+      Number(req.question3),
+      Number(req.question4),
+      Number(req.question5)
     ]
   }
   return closestMatch(friend)
