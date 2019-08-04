@@ -16,7 +16,7 @@
     <main class="container">
       <h1 class="mt-4">Survey Questions</h1>
       <hr />
-      <form id="friendForm" action="/survey" method="POST">
+      <form id="friendForm" action="/survey/complete" method="POST">
         <h2><strong>About You</strong></h2>
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -42,7 +42,10 @@
         </div>
         <hr />
         <h2><strong>Question 1</strong></h2>
-        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
+        <h3>
+          In a discussion, truth should be more important than people's
+          sensitivities.
+        </h3>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
@@ -95,7 +98,10 @@
           <label class="form-check-label" for="q1-5">5</label>
         </div>
         <h2><strong>Question 2</strong></h2>
-        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
+        <h3>
+          Generally speaking, you rely more on your experience then your
+          imagination.
+        </h3>
         <div class="form-check form-check-inline question2">
           <input
             class="form-check-input"
@@ -148,7 +154,10 @@
           <label class="form-check-label" for="q2-5">5</label>
         </div>
         <h2><strong>Question 3</strong></h2>
-        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
+        <h3>
+          You find it easy to stay relaxed and focused even when there is some
+          pressure.
+        </h3>
         <div class="form-check form-check-inline question3">
           <input
             class="form-check-input"
@@ -200,6 +209,114 @@
           />
           <label class="form-check-label" for="q3-5">5</label>
         </div>
+        <h2><strong>Question 4</strong></h2>
+        <h3>You rarely do something just out of sheer curiosity.</h3>
+        <div class="form-check form-check-inline question4">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="question4"
+            value="1"
+            id="q4-1"
+            required
+          />
+          <label class="form-check-label" for="q4-1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="question4"
+            value="2"
+            id="q4-2"
+          />
+          <label class="form-check-label" for="q4-2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="question4"
+            value="3"
+            id="q4-3"
+          />
+          <label class="form-check-label" for="q4-3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="question4"
+            value="4"
+            id="q4-4"
+          />
+          <label class="form-check-label" for="q4-4">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="question4"
+            value="5"
+            id="q4-5"
+          />
+          <label class="form-check-label" for="q4-5">5</label>
+        </div>
+        <h2><strong>Question 5</strong></h2>
+        <h3>
+          It is often difficult for you to relate to other people's feelings.
+        </h3>
+        <div class="form-check form-check-inline question5">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="question5"
+            value="1"
+            id="q5-1"
+            required
+          />
+          <label class="form-check-label" for="q5-1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="question5"
+            value="2"
+            id="q5-2"
+          />
+          <label class="form-check-label" for="q5-2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="question5"
+            value="3"
+            id="q5-3"
+          />
+          <label class="form-check-label" for="q5-3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="question5"
+            value="4"
+            id="q5-4"
+          />
+          <label class="form-check-label" for="q5-4">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="question5"
+            value="5"
+            id="q5-5"
+          />
+          <label class="form-check-label" for="q3-5">5</label>
+        </div>
         <div class="my-4">
           <button
             class="btn btn-primary btn-lg"
@@ -211,7 +328,12 @@
           </button>
         </div>
       </form>
-      <footer class="text-center">copyright &copy; 2019</footer>
+      <footer class="text-center">
+        <a href="api/friends">API Friends List |</a> copyright &copy; 2019
+        <a href="https://github.com/MitchWebster1/Friend-Finder" target="blank"
+          >| Github Repo</a
+        >
+      </footer>
     </main>
 
     <script
@@ -229,15 +351,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- <script src="../logic/logic.js"></script> -->
-    <!-- <script>
-      document.querySelector('form').addEventListener('submit', e => {
-        const data = new FormData(document.querySelector('form'))
-        e.preventDefault()
-        console.log(data)
-        console.log(document.getElementsByName('question1'))
-      })
-    </script> -->
   </body>
 </html>

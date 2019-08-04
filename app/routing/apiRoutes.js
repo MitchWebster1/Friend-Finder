@@ -1,15 +1,15 @@
 const express = require('express')
-const path = require('path')
 const router = express.Router()
 const { friends, newFriend } = require('../data/friends')
 
-// router.get('/survey', (req, res) => {
-//   res.json(friends)
-// })
+// triggered by link in footer just displays the friends array in json format
+router.get('/api/friends', (req, res) => {
+  res.json(friends)
+})
 
-router.post('/survey', (req, res) => {
-  // console.log(req.body)
-  // newFriend(req.body)
+// handles post request from survey form
+// not sure how to send the response back to html to build out the matching friend?
+router.post('/survey/complete', (req, res) => {
   res.json(newFriend(req.body))
 })
 

@@ -1,24 +1,27 @@
 const friends = [
   {
-    name: 'Ahmed',
-    photo:
-      'https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg',
-    scores: [1, 2, 3]
+    name: 'Katie',
+    photo: 'https://imgur.com/gallery/qZVJNDd',
+    scores: [2, 3, 3, 2, 1]
   },
   {
     name: 'Mitch',
-    photo: 'nope',
-    scores: [5, 4, 3]
+    photo: 'https://imgur.com/gallery/oC2XIPV',
+    scores: [5, 4, 4, 3, 5]
   }
 ]
 
+// adds all of the values of a given array together to get the total sum
 const scoreSum = arr => arr.reduce((a, b) => a + b, 0)
 
+// takes an array of numbers and a target number and finds the closest match
 const closestSum = (arr, target) =>
   arr.reduce((prev, curr) => {
     return Math.abs(curr - target) < Math.abs(prev - target) ? curr : prev
   })
 
+// returns the friend that's scores match closest to the one just entered
+// pushes newest entered friend into the friends array
 const closestMatch = obj => {
   const target = scoreSum(obj.scores)
   const sums = friends.map(index => scoreSum(index.scores))
@@ -27,6 +30,7 @@ const closestMatch = obj => {
   return friends[index]
 }
 
+// takes data from post request to build out the new friend
 const newFriend = req => {
   const friend = {
     name: req.name,
