@@ -16,66 +16,83 @@
     <main class="container">
       <h1 class="mt-4">Survey Questions</h1>
       <hr />
-      <form>
+      <form id="friendForm" action="/survey" method="POST">
         <h2><strong>About You</strong></h2>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="Name">Name</label>
-            <input type="text" class="form-control" id="name" required />
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+            />
           </div>
           <div class="form-group col-md-6">
             <label for="Image">Image URL</label>
-            <input type="text" class="form-control" id="image" required />
+            <input
+              type="text"
+              class="form-control"
+              id="image"
+              name="picURL"
+              required
+            />
           </div>
         </div>
         <hr />
         <h2><strong>Question 1</strong></h2>
         <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
-        <div class="form-check form-check-inline question1">
+        <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question1"
-            value="option1"
+            value="1"
+            id="q1-1"
             required
           />
-          <label class="form-check-label" for="radio1">1</label>
+          <label class="form-check-label" for="q1-1">1</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question1"
-            value="option2"
+            value="2"
+            id="q1-2"
           />
-          <label class="form-check-label" for="radio2">2</label>
+          <label class="form-check-label" for="q1-2">2</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question1"
-            value="option3"
+            value="3"
+            id="q1-3"
           />
-          <label class="form-check-label" for="radio3">3</label>
+          <label class="form-check-label" for="q1-3">3</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question1"
-            value="option4"
+            value="4"
+            id="q1-4"
           />
-          <label class="form-check-label" for="radio4">4</label>
+          <label class="form-check-label" for="q1-4">4</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question1"
-            value="option5"
+            value="5"
+            id="q1-5"
           />
-          <label class="form-check-label" for="radio5">5</label>
+          <label class="form-check-label" for="q1-5">5</label>
         </div>
         <h2><strong>Question 2</strong></h2>
         <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
@@ -84,46 +101,51 @@
             class="form-check-input"
             type="radio"
             name="question2"
-            value="option1"
+            value="1"
+            id="q2-1"
             required
           />
-          <label class="form-check-label" for="radio1">1</label>
+          <label class="form-check-label" for="q2-1">1</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question2"
-            value="option2"
+            value="2"
+            id="q2-2"
           />
-          <label class="form-check-label" for="radio2">2</label>
+          <label class="form-check-label" for="q2-2">2</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question2"
-            value="option3"
+            value="3"
+            id="q2-3"
           />
-          <label class="form-check-label" for="radio3">3</label>
+          <label class="form-check-label" for="q2-3">3</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question2"
-            value="option4"
+            value="4"
+            id="q2-4"
           />
-          <label class="form-check-label" for="radio4">4</label>
+          <label class="form-check-label" for="q2-4">4</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question2"
-            value="option5"
+            value="5"
+            id="q2-5"
           />
-          <label class="form-check-label" for="radio5">5</label>
+          <label class="form-check-label" for="q2-5">5</label>
         </div>
         <h2><strong>Question 3</strong></h2>
         <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
@@ -132,385 +154,61 @@
             class="form-check-input"
             type="radio"
             name="question3"
-            value="option1"
+            value="1"
+            id="q3-1"
             required
           />
-          <label class="form-check-label" for="radio1">1</label>
+          <label class="form-check-label" for="q3-1">1</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question3"
-            value="option2"
+            value="2"
+            id="q3-2"
           />
-          <label class="form-check-label" for="radio2">2</label>
+          <label class="form-check-label" for="q3-2">2</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question3"
-            value="option3"
+            value="3"
+            id="q3-3"
           />
-          <label class="form-check-label" for="radio3">3</label>
+          <label class="form-check-label" for="q3-3">3</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question3"
-            value="option4"
+            value="4"
+            id="q3-4"
           />
-          <label class="form-check-label" for="radio4">4</label>
+          <label class="form-check-label" for="q3-4">4</label>
         </div>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
             type="radio"
             name="question3"
-            value="option5"
+            value="5"
+            id="q3-5"
           />
-          <label class="form-check-label" for="radio5">5</label>
-        </div>
-        <h2><strong>Question 4</strong></h2>
-        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
-        <div class="form-check form-check-inline question4">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question4"
-            value="option1"
-            required
-          />
-          <label class="form-check-label" for="radio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question4"
-            value="option2"
-          />
-          <label class="form-check-label" for="radio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question4"
-            value="option3"
-          />
-          <label class="form-check-label" for="radio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question4"
-            value="option4"
-          />
-          <label class="form-check-label" for="radio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question4"
-            value="option5"
-          />
-          <label class="form-check-label" for="radio5">5</label>
-        </div>
-        <h2><strong>Question 5</strong></h2>
-        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
-        <div class="form-check form-check-inline question5">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question5"
-            value="option1"
-            required
-          />
-          <label class="form-check-label" for="radio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question5"
-            value="option2"
-          />
-          <label class="form-check-label" for="radio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question5"
-            value="option3"
-          />
-          <label class="form-check-label" for="radio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question5"
-            value="option4"
-          />
-          <label class="form-check-label" for="radio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question5"
-            value="option5"
-          />
-          <label class="form-check-label" for="radio5">5</label>
-        </div>
-        <h2><strong>Question 6</strong></h2>
-        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
-        <div class="form-check form-check-inline question6">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question6"
-            value="option1"
-            required
-          />
-          <label class="form-check-label" for="radio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question6"
-            value="option2"
-          />
-          <label class="form-check-label" for="radio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question6"
-            value="option3"
-          />
-          <label class="form-check-label" for="radio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question6"
-            value="option4"
-          />
-          <label class="form-check-label" for="radio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question6"
-            value="option5"
-          />
-          <label class="form-check-label" for="radio5">5</label>
-        </div>
-        <h2><strong>Question 7</strong></h2>
-        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
-        <div class="form-check form-check-inline question7">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question7"
-            value="option1"
-            required
-          />
-          <label class="form-check-label" for="radio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question7"
-            value="option2"
-          />
-          <label class="form-check-label" for="radio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question7"
-            value="option3"
-          />
-          <label class="form-check-label" for="radio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question7"
-            value="option4"
-          />
-          <label class="form-check-label" for="radio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question7"
-            value="option5"
-          />
-          <label class="form-check-label" for="radio5">5</label>
-        </div>
-        <h2><strong>Question 8</strong></h2>
-        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
-        <div class="form-check form-check-inline question8">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question8"
-            value="option1"
-            required
-          />
-          <label class="form-check-label" for="radio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question8"
-            value="option2"
-          />
-          <label class="form-check-label" for="radio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question8"
-            value="option3"
-          />
-          <label class="form-check-label" for="radio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question8"
-            value="option4"
-          />
-          <label class="form-check-label" for="radio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question8"
-            value="option5"
-          />
-          <label class="form-check-label" for="radio5">5</label>
-        </div>
-        <h2><strong>Question 9</strong></h2>
-        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
-        <div class="form-check form-check-inline question9">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question9"
-            value="option1"
-            required
-          />
-          <label class="form-check-label" for="radio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question9"
-            value="option2"
-          />
-          <label class="form-check-label" for="radio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question9"
-            value="option3"
-          />
-          <label class="form-check-label" for="radio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question9"
-            value="option4"
-          />
-          <label class="form-check-label" for="radio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question9"
-            value="option5"
-          />
-          <label class="form-check-label" for="radio5">5</label>
-        </div>
-        <h2><strong>Question 10</strong></h2>
-        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
-        <div class="form-check form-check-inline question10">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question10"
-            value="option1"
-            required
-          />
-          <label class="form-check-label" for="radio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question10"
-            value="option2"
-          />
-          <label class="form-check-label" for="radio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question10"
-            value="option3"
-          />
-          <label class="form-check-label" for="radio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question10"
-            value="option4"
-          />
-          <label class="form-check-label" for="radio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="question10"
-            value="option5"
-          />
-          <label class="form-check-label" for="radio5">5</label>
+          <label class="form-check-label" for="q3-5">5</label>
         </div>
         <div class="my-4">
-          <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+          <button
+            class="btn btn-primary btn-lg"
+            id="submitBtn"
+            type="submit"
+            value="Submit"
+          >
+            Submit
+          </button>
         </div>
       </form>
       <footer class="text-center">copyright &copy; 2019</footer>
@@ -531,5 +229,15 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="../logic/logic.js"></script> -->
+    <!-- <script>
+      document.querySelector('form').addEventListener('submit', e => {
+        const data = new FormData(document.querySelector('form'))
+        e.preventDefault()
+        console.log(data)
+        console.log(document.getElementsByName('question1'))
+      })
+    </script> -->
   </body>
 </html>
