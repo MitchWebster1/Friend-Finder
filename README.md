@@ -1,6 +1,6 @@
 # Friend Finder
 
-[**https://mitchwebster1.github.io/Train-Scheduler/**](https://mitchwebster1.github.io/Train-Scheduler/)
+[**https://friend-finder-007.herokuapp.com/**](https://friend-finder-007.herokuapp.com/)
 
 ## What does this project do?
 
