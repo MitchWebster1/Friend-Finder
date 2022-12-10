@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/MitchWebster1/Friend-Finder#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs-extra": "^8.1.0"
   },
   "devDependencies": {
